@@ -1,3 +1,4 @@
+/* eslint-disable function-paren-newline */
 /* eslint-disable no-use-before-define */
 /* eslint-disable implicit-arrow-linebreak */
 /* eslint-disable no-param-reassign */
