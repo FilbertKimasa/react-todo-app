@@ -1,4 +1,6 @@
-import { useState, useEffect, useRef } from 'react';
+/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable react/button-has-type */
+import { useState, useRef } from 'react';
 import { useOnClickOutside } from './useOnClickOutside';
 
 function Navbar() {

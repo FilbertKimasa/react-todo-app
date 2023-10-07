@@ -1,4 +1,6 @@
+/* eslint-disable import/prefer-default-export */
 import { useEffect } from 'react';
+
 export const useOnClickOutside = (ref, currentState, updater) => {
   useEffect(() => {
     const handler = (event) => {

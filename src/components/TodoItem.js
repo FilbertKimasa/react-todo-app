@@ -1,3 +1,6 @@
+/* eslint-disable object-curly-newline */
+/* eslint-disable react/button-has-type */
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import styles from '../styles/TodoItem.module.css';
 
@@ -13,8 +16,8 @@ const TodoItem = ({ itemProp, handleChange, delTodo, setUpdate }) => {
     textDecoration: 'line-through',
   };
 
-  let viewMode = {};
-  let editMode = {};
+  const viewMode = {};
+  const editMode = {};
   if (editing) {
     viewMode.display = 'none';
   } else {

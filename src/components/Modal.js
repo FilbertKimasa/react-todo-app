@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import { useOnClickOutside } from './useOnClickOutside';
+
 const Modal = () => {
   const [openModal, setOpenModal] = useState(false);
   const ref = useRef();
