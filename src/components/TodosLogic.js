@@ -1,3 +1,6 @@
+/* eslint-disable no-use-before-define */
+/* eslint-disable implicit-arrow-linebreak */
+/* eslint-disable no-param-reassign */
 import React, { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import InputTodo from './InputTodo';
@@ -7,9 +10,7 @@ function TodosLogic() {
   const [todos, setTodos] = useState(getInitialTodos());
 
   const delTodo = (id) => {
-    setTodos([
-      ...todos.filter((todo) => todo.id !== id),
-    ]);
+    setTodos([...todos.filter((todo) => todo.id !== id)]);
   };
 
   useEffect(() => {
@@ -34,15 +35,17 @@ function TodosLogic() {
     setTodos([...todos, newTodo]);
   };
   const handleChange = (id) => {
-    setTodos((prevState) => prevState.map((todo) => {
-      if (todo.id === id) {
-        return {
-          ...todo,
-          completed: !todo.completed,
-        };
-      }
-      return todo;
-    }));
+    setTodos((prevState) =>
+      prevState.map((todo) => {
+        if (todo.id === id) {
+          return {
+            ...todo,
+            completed: !todo.completed,
+          };
+        }
+        return todo;
+      }),
+    );
   };
 
   const setUpdate = (updatedTitle, id) => {

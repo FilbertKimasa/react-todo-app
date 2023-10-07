@@ -40,8 +40,12 @@ const TodoItem = ({ itemProp, handleChange, delTodo, setUpdate }) => {
         <span style={itemProp.completed ? completedStyle : null}>
           {itemProp.title}
         </span>
-        <button onClick={handleEditing}>Edit</button>
-        <button onClick={() => delTodo(itemProp.id)}>Delete</button>
+        <button type="button" onClick={handleEditing}>
+          Edit
+        </button>
+        <button type="button" onClick={() => delTodo(itemProp.id)}>
+          Delete
+        </button>
       </div>
       <input
         type="text"

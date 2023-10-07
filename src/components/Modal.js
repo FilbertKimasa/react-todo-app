@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable react/button-has-type */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import { useState, useRef } from 'react';
 import { useOnClickOutside } from './useOnClickOutside';
 

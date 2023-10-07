@@ -6,7 +6,6 @@ import { useOnClickOutside } from './useOnClickOutside';
 function Navbar() {
   const [dropdown, setDropdown] = useState(false);
   const ref = useRef();
-  console.log(ref);
   useOnClickOutside(ref, dropdown, () => setDropdown(false));
   return (
     <nav>
